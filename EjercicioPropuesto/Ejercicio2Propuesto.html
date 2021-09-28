@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server"> 
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+</head>
+<script type="text/javascript">
+function colorRandom() {
+
+    var r = getRandomInt(0, 255);
+    var g = getRandomInt(0, 255);
+    var b = getRandomInt(0, 255);
+
+    document.getElementById("ele1").style.color = "rgb(" + r + "," + g + "," + b + ")";
+    r = getRandomInt(0, 255);
+    g = getRandomInt(0, 255);
+    b = getRandomInt(0, 255);
+    document.getElementById("ele2").style.color = "rgb(" + r + "," + g + "," + b + ")";
+    r = getRandomInt(0, 255);
+    g = getRandomInt(0, 255);
+    b = getRandomInt(0, 255);
+    document.getElementById("ele3").style.color = "rgb(" + r + "," + g + "," + b + ")";
+    r = getRandomInt(0, 255);
+    g = getRandomInt(0, 255);
+    b = getRandomInt(0, 255);
+    document.getElementById("ele4").style.color = "rgb(" + r + "," + g + "," + b + ")";
+    r = getRandomInt(0, 255);
+    g = getRandomInt(0, 255);
+    b = getRandomInt(0, 255);
+    document.getElementById("ele5").style.color = "rgb(" + r + "," + g + "," + b + ")";
+    r = getRandomInt(0, 255);
+    g = getRandomInt(0, 255);
+    b = getRandomInt(0, 255);
+    document.getElementById("ele6").style.color = "rgb(" + r + "," + g + "," + b + ")";
+
+    document.getElementById("ele1").innerHTML = "HunterXHunter";
+    document.getElementById("ele2").innerHTML = "Full Metal Alchemist";
+    document.getElementById("ele3").innerHTML = "Kimetsu No Yaiba";
+    document.getElementById("ele4").innerHTML = "Dragon ball";
+    document.getElementById("ele5").innerHTML = "Naruto";
+    document.getElementById("ele6").innerHTML = "Haikyuu";
+    }
+
+function getRandomInt(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+function borrar() {
+    document.getElementById("ele1").innerHTML = "";
+    document.getElementById("ele2").innerHTML = "";
+    document.getElementById("ele3").innerHTML = "";
+    document.getElementById("ele4").innerHTML = "";
+    document.getElementById("ele5").innerHTML = "";
+    document.getElementById("ele6").innerHTML = "";
+
+}
+
+</script>
+
+<body style="width: 392px">
+    <div style="background-color:  #80ced6">
+        <h1>Lista de Animes</h1>
+        <ul style="background-color:  #ffffff">
+        <li id="ele1"></li>
+        <li id="ele2"></li>
+        <li id="ele3"></li>
+        <li id="ele4"></li>
+        <li id="ele5"></li>
+        <li id="ele6"></li>
+        </ul>
+         <input type="submit" id="BotonCompra" value="Ingresar" onclick="colorRandom()" />
+         <input type="submit" id="Button1" value="Borrar" onclick="borrar()"/>
+     </div>
+ </body>
+</html>
